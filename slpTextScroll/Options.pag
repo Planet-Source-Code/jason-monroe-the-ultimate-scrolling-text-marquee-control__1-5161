@@ -1,0 +1,368 @@
+VERSION 5.00
+Begin VB.PropertyPage Options 
+   Caption         =   "Color Options"
+   ClientHeight    =   4785
+   ClientLeft      =   0
+   ClientTop       =   0
+   ClientWidth     =   5625
+   PaletteMode     =   0  'Halftone
+   ScaleHeight     =   4785
+   ScaleWidth      =   5625
+   Begin VB.ComboBox cboBorderStyle 
+      Height          =   315
+      ItemData        =   "Options.pgx":0000
+      Left            =   1620
+      List            =   "Options.pgx":0002
+      Style           =   2  'Dropdown List
+      TabIndex        =   24
+      Top             =   1500
+      Width           =   3915
+   End
+   Begin VB.PictureBox Picture1 
+      Height          =   1095
+      Left            =   60
+      ScaleHeight     =   1035
+      ScaleWidth      =   5415
+      TabIndex        =   23
+      Top             =   3480
+      Width           =   5475
+   End
+   Begin VB.ComboBox cboShadowDirection 
+      Height          =   315
+      ItemData        =   "Options.pgx":0004
+      Left            =   1620
+      List            =   "Options.pgx":0006
+      Style           =   2  'Dropdown List
+      TabIndex        =   20
+      Top             =   2220
+      Width           =   3915
+   End
+   Begin VB.ComboBox cboScrollDirection 
+      Height          =   315
+      ItemData        =   "Options.pgx":0008
+      Left            =   1620
+      List            =   "Options.pgx":000A
+      Style           =   2  'Dropdown List
+      TabIndex        =   18
+      Top             =   1860
+      Width           =   3915
+   End
+   Begin VB.TextBox txtScrollRepeat 
+      Height          =   315
+      Left            =   4920
+      TabIndex        =   16
+      Text            =   "Text1"
+      Top             =   1140
+      Width           =   555
+   End
+   Begin VB.CheckBox chkWordWrap 
+      Caption         =   "WordWrap"
+      Height          =   285
+      Left            =   1620
+      TabIndex        =   15
+      Top             =   2580
+      Width           =   1380
+   End
+   Begin VB.TextBox txtText 
+      Height          =   330
+      Left            =   60
+      TabIndex        =   14
+      Top             =   2880
+      Width           =   5460
+   End
+   Begin VB.TextBox txtScrollSpeed 
+      Height          =   315
+      Left            =   3180
+      TabIndex        =   11
+      Text            =   "Text1"
+      Top             =   1140
+      Width           =   555
+   End
+   Begin VB.TextBox txtShadowSize 
+      Height          =   315
+      Left            =   1620
+      TabIndex        =   9
+      Text            =   "Text1"
+      Top             =   1140
+      Width           =   555
+   End
+   Begin VB.CommandButton btnShowColor 
+      Caption         =   "..."
+      Height          =   315
+      Index           =   2
+      Left            =   5280
+      TabIndex        =   8
+      Top             =   780
+      Width           =   255
+   End
+   Begin VB.CommandButton btnShowColor 
+      Caption         =   "..."
+      Height          =   315
+      Index           =   1
+      Left            =   5280
+      TabIndex        =   7
+      Top             =   420
+      Width           =   255
+   End
+   Begin VB.CommandButton btnShowColor 
+      Caption         =   "..."
+      Height          =   315
+      Index           =   0
+      Left            =   5280
+      TabIndex        =   6
+      Top             =   60
+      Width           =   255
+   End
+   Begin VB.TextBox txtShadowColor 
+      Height          =   315
+      Left            =   1620
+      TabIndex        =   4
+      Text            =   "Text1"
+      Top             =   420
+      Width           =   3675
+   End
+   Begin VB.TextBox txtBackgroundColor 
+      Height          =   315
+      Left            =   1620
+      TabIndex        =   2
+      Text            =   "Text1"
+      Top             =   780
+      Width           =   3675
+   End
+   Begin VB.TextBox txtFontColor 
+      Height          =   315
+      Left            =   1620
+      TabIndex        =   0
+      Text            =   "Text1"
+      Top             =   60
+      Width           =   3675
+   End
+   Begin VB.Label Label12 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Border Style:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   25
+      Top             =   1560
+      Width           =   1455
+   End
+   Begin VB.Label Label11 
+      Caption         =   "Sample:"
+      Height          =   240
+      Left            =   60
+      TabIndex        =   22
+      Top             =   3240
+      Width           =   1440
+   End
+   Begin VB.Label Label8 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Shadow Direction:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   21
+      Top             =   2280
+      Width           =   1455
+   End
+   Begin VB.Label Label7 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Scroll Direction:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   19
+      Top             =   1920
+      Width           =   1455
+   End
+   Begin VB.Label Label6 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Scroll Repeat:"
+      Height          =   195
+      Left            =   3420
+      TabIndex        =   17
+      Top             =   1200
+      Width           =   1455
+   End
+   Begin VB.Label lblText 
+      Caption         =   "Text:"
+      Height          =   240
+      Left            =   60
+      TabIndex        =   13
+      Top             =   2640
+      Width           =   1440
+   End
+   Begin VB.Label Label5 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Scroll Rate:"
+      Height          =   195
+      Left            =   1680
+      TabIndex        =   12
+      Top             =   1200
+      Width           =   1455
+   End
+   Begin VB.Label Label4 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Shadow Depth:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   10
+      Top             =   1200
+      Width           =   1455
+   End
+   Begin VB.Label Label3 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Shadow Color:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   5
+      Top             =   480
+      Width           =   1455
+   End
+   Begin VB.Label Label2 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Background Color:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   3
+      Top             =   840
+      Width           =   1455
+   End
+   Begin VB.Label Label1 
+      Alignment       =   1  'Right Justify
+      Caption         =   "Font Color:"
+      Height          =   195
+      Left            =   120
+      TabIndex        =   1
+      Top             =   120
+      Width           =   1455
+   End
+End
+Attribute VB_Name = "Options"
+Attribute VB_GlobalNameSpace = False
+Attribute VB_Creatable = True
+Attribute VB_PredeclaredId = False
+Attribute VB_Exposed = True
+Option Explicit
+
+Private Sub btnShowColor_Click(Index As Integer)
+    Dim myColor As SelectedColor
+    myColor = ShowColor(PropertyPage.hWnd)
+    If Not myColor.bCanceled Then
+        Select Case Index
+            Case 0
+                txtFontColor.Text = "&H" & Hex(myColor.oSelectedColor)
+            Case 1
+                txtShadowColor.Text = "&H" & Hex(myColor.oSelectedColor)
+            Case 2
+                txtBackgroundColor.Text = "&H" & Hex(myColor.oSelectedColor)
+        End Select
+    End If
+End Sub
+
+Private Sub cboBorderStyle_Change()
+    Changed = True
+End Sub
+
+Private Sub cboBorderStyle_DropDown()
+    Changed = True
+End Sub
+
+Private Sub cboScrollDirection_Change()
+    Changed = True
+End Sub
+
+Private Sub cboScrollDirection_DropDown()
+    Changed = True
+End Sub
+
+Private Sub cboShadowDirection_Change()
+    Changed = True
+End Sub
+
+Private Sub cboShadowDirection_DropDown()
+    Changed = True
+End Sub
+
+Private Sub chkWordWrap_Click()
+    Changed = True
+End Sub
+
+Private Sub txtBackgroundColor_Change()
+    'Changed = True
+End Sub
+
+Private Sub txtFontColor_Change()
+    Changed = True
+End Sub
+
+Private Sub txtScrollRepeat_Change()
+    Changed = True
+End Sub
+
+Private Sub txtScrollSpeed_Change()
+    Changed = True
+End Sub
+
+
+Private Sub txtShadowColor_Change()
+    Changed = True
+End Sub
+
+Private Sub txtShadowSize_Change()
+    Changed = True
+End Sub
+
+
+Private Sub PropertyPage_Initialize()
+'
+cboScrollDirection.AddItem "0 = slpDefault", 0
+cboScrollDirection.AddItem "1 = slpVertical", 1
+cboScrollDirection.AddItem "2 = slpHorizontal", 2
+cboShadowDirection.AddItem "0 = slpDropShadowDefault", 0
+cboShadowDirection.AddItem "1 = slpDropShadowNorthWest", 1
+cboShadowDirection.AddItem "2 = slpDropShadowNorthEast", 2
+cboShadowDirection.AddItem "3 = slpDropShadowSouthWest", 3
+cboShadowDirection.AddItem "4 = slpDropShadowSouthEast", 4
+cboBorderStyle.AddItem "0 = None", 0
+cboBorderStyle.AddItem "1 = FixedSingle", 1
+
+
+End Sub
+
+Private Sub txtText_Change()
+    Changed = True
+End Sub
+
+
+Private Sub PropertyPage_ApplyChanges()
+    SelectedControls(0).WordWrap = (chkWordWrap.Value = vbChecked)
+    SelectedControls(0).BackColor = CLng(txtBackgroundColor.Text)
+    SelectedControls(0).FontColor = CLng(txtFontColor.Text)
+    SelectedControls(0).ShadowColor = CLng(txtShadowColor.Text)
+    SelectedControls(0).ScrollRepeatCount = txtScrollRepeat.Text
+    SelectedControls(0).ScrollSpeed = txtScrollSpeed.Text
+    SelectedControls(0).ShadowSize = txtShadowSize.Text
+    SelectedControls(0).Text = txtText.Text
+    SelectedControls(0).ScrollDirection = cboScrollDirection.ListIndex
+    SelectedControls(0).ShadowDirection = cboShadowDirection.ListIndex
+    SelectedControls(0).BorderStyle = cboBorderStyle.ListIndex
+End Sub
+
+
+Private Sub PropertyPage_SelectionChanged()
+    chkWordWrap.Value = Abs(SelectedControls(0).WordWrap)
+    txtBackgroundColor.Text = "&H" & Hex(SelectedControls(0).BackColor)
+    txtFontColor.Text = "&H" & Hex(SelectedControls(0).FontColor)
+    txtShadowColor.Text = "&H" & Hex(SelectedControls(0).ShadowColor)
+    txtScrollRepeat.Text = SelectedControls(0).ScrollRepeatCount
+    txtScrollSpeed.Text = SelectedControls(0).ScrollSpeed
+    txtShadowSize.Text = SelectedControls(0).ShadowSize
+    txtText.Text = SelectedControls(0).Text
+    cboScrollDirection.ListIndex = SelectedControls(0).ScrollDirection
+    cboShadowDirection.ListIndex = SelectedControls(0).ShadowDirection
+    cboBorderStyle.ListIndex = SelectedControls(0).BorderStyle
+End Sub
+
+
+
+Private Sub txtText_LostFocus()
+    Changed = True
+End Sub
