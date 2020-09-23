@@ -1,0 +1,7 @@
+slpTextScroll = 268, 321, 1178, 871, C, 297, 190, 506, 295, C
+cSLPEnums = 230, 129, 677, 679, C
+modAutoErrHandler = 29, 127, 917, 677, C
+Options = 260, 158, 1055, 708, , 297, 186, 812, 618, C
+ColorPickerCode = 230, 129, 1109, 679, C
+ShowFontDialog = 324, 174, 1215, 980, C
+frmAbout = 252, 129, 1069, 935, C, 0, 0, 0, 0, C
